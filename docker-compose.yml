@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/rooftop
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    volumes:
+      - db-volume:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres # TODO make secrets
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+volumes:
+  db-volume:
