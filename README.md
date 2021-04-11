@@ -62,7 +62,7 @@ To clear the PSQL database:
 
     `npx react-native start`
 
-5. In a new terminal, run the iOS app in the simulator:
+5. In a new terminal, run the iOS app in the simulator (in the frontend directory again):
 
     `npx react-native run-ios`
 
