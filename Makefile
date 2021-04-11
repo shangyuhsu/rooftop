@@ -14,7 +14,5 @@ stop-backend:
 logs-backend:
 	docker-compose logs -f backend
 
-run: run-backend
-
-clean:
+clean-backend:
 	docker volume rm rooftop_db-volume
