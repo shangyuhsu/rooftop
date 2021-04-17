@@ -3,4 +3,6 @@ from django.utils import timezone
 
 def ping(request):
     now = timezone.now()
-    return HttpResponse(f"What's up (sent at {now})")
+    return HttpResponse(f"Hey World (sent at {now})")
+    
+
